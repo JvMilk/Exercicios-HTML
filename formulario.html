@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cartao.html">Cartão de visitas</a></li>
+        <li><a href="compras.html">Lista de compras</a></li>
+        <li><a href="imglink.html">Galeria</a></li>
+
+    </ol>
+    <h2>Formulário</h2>
+    <h3>Preencha os dados abaixo:</h3>
+    <form>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" required min="0" max="120">
+        </div>
+        <br>
+
+        <div>
+            <label for="user">Usuario: </label>
+            <input type="text" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="email"> E-mail: </label>
+            <input type="email" requiered placeholder="xxxxxx@xxxx.xxx">
+        </div>
+        <br>
+
+        <div>
+            <label for="celular"> Celular: </label>
+            <input type="tel" requiered placeholder="(xx) xxxxx-xxxx">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="dataEvento">Data do Evento: </label>
+            <input type="datetime-local" required>
+        </div>
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Estado Civil</legend>
+                <p>
+                    <label>
+                        <input type="radio" name="estado_civil" value="Casado"> Casado
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="estado_civil" value="Solteiro"> Solteiro
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="estado_civil" value="Divorciado"> Divorciado
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
